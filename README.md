@@ -2,6 +2,8 @@ ___
 Furni.shop landing page, based on [ARSHAKIR free template](https://www.arshakir.com/project/freebie-website-landing-page-design)
 ___
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fc1f4f5e-a8a5-4598-bb25-a616d3ecbd16/deploy-status)](https://app.netlify.com/sites/lighthearted-pie-d845ba/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
