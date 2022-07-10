@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import FurnishopLogo from '../public/furnishop-logo.png'
 import SearchIcon from '../public/search.png'
 import MoreIcon from '../public/more.png'
+import DealsIcon from '../public/deals-icon.png'
 
 export default function Home() {
   return (
@@ -15,13 +16,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+JP:wght@700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet"></link>
       </Head>
       
-      <main className={`flex flex-col bg-red-300`}>
-        <header className={`flex flex-col bg-pink-300`}>
-          <navbar className={`flex my-8 bg-blue-200 items-center`}>
-            <ul className={`flex flex-row bg-yellow-300 px-24 justify-between items-center w-full`}>
+      <main className={`flex flex-col`}>
+        <header className={`flex flex-col h-screen`}>
+          <navbar className={`flex my-8 items-center`}>
+            <ul className={`flex flex-row px-24 justify-between items-center w-full`}>
               <li>
                 <Image
                   src={FurnishopLogo}
@@ -32,7 +33,7 @@ export default function Home() {
                 </Image>
               </li>
               <li className={`w-3/6`}>
-                <ul className={`flex flex-row justify-around w-full font-monts font-medium text-blacko2 bg-red-600`}>
+                <ul className={`flex flex-row justify-around w-full font-monts font-medium text-blacko2`}>
                   <Link href={`#`}>
                     <a>
                       <li>Home</li>
@@ -81,15 +82,73 @@ export default function Home() {
               </li>
             </ul>
           </navbar>
-          <div className={`bg-green-200`}>
+          <div className={`bg-green-200 h-full`}>
             Ici suite du header
           </div>
         </header>
-        <section1 className={``}>
-          
+        <section1 className={`flex flex-col h-52 justify-center items-center gap-y-10 bg-light-grey`}>
+          <h2 className={`font-opsans font-medium text-dark-blue text-xl`}>TRUSTED BY OVER 1K+ COMPANIES</h2>
+          <ul className={`flex flex-row w-full justify-around px-40 text-xl uppercase`}>
+            <li>
+              Company 1
+            </li>
+            <li>
+              Company 2
+            </li>
+            <li>
+              Company 3
+            </li>
+            <li>
+              Company 4
+            </li>
+            <li>
+              Company 5
+            </li>
+          </ul>
         </section1>
-        <section2 className={``}>
-          
+        <section2 className={`flex flex-row h-h-screen px-28 items-center justify-between`}>
+          <div className={`flex flex-col w-3/5 gap-y-5`}>
+            <p className={`font-noto text-5xl text-green-cyan`}>Hot 🔥<br/>deals for you</p>
+            <p className={`text-dark-grey`}>Online shopping for retail sales<br/>direct to consumers</p>
+          </div>
+          <div className={`flex flex-row justify-between gap-x-6`}>
+            <div className={`flex flex-col gap-y-7`}>
+              <div>
+                <Image
+                  src={DealsIcon}
+                  width={`32`}
+                  height={`35`}
+                  alt={``}
+                />
+              </div>
+              <p className={`font-opsans font-bold text-xl`}>1.5% cashback</p>
+              <p className={`text-dark-grey`}>Online shopping for retail sales direct to consumers</p>
+            </div>
+            <div className={`flex flex-col gap-y-7`}>
+              <div>
+                <Image
+                  src={DealsIcon}
+                  width={`32`}
+                  height={`35`}
+                  alt={``}
+                />
+              </div>
+              <p className={`font-opsans font-bold text-xl`}>30-day terms</p>
+              <p className={`text-dark-grey`}>Online shopping for retail sales direct to consumers</p>
+            </div>
+            <div className={`flex flex-col gap-y-7`}>
+              <div>
+                <Image
+                  src={DealsIcon}
+                  width={`32`}
+                  height={`35`}
+                  alt={``}
+                />
+              </div>
+              <p className={`font-opsans font-bold text-xl`}>Save money</p>
+              <p className={`text-dark-grey`}>Online shopping for retail sales direct to consumers</p>
+            </div>
+          </div>
         </section2>
         <section3 className={``}>
           
