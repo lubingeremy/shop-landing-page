@@ -6,6 +6,10 @@ import FurnishopLogo from '../public/furnishop-logo.png'
 import SearchIcon from '../public/search.png'
 import MoreIcon from '../public/more.png'
 import DealsIcon from '../public/deals-icon.png'
+import Illustration1 from '../public/illustration1.png'
+import Illustration2 from '../public/illustration2.png'
+import Illustration3 from '../public/illustration3.png'
+import Illustration4 from '../public/illustration4.png'
 
 export default function Home() {
   return (
@@ -108,7 +112,7 @@ export default function Home() {
         </section1>
         <section2 className={`flex flex-row h-h-screen px-28 items-center justify-between`}>
           <div className={`flex flex-col w-3/5 gap-y-5`}>
-            <p className={`font-noto text-5xl text-green-cyan`}>Hot 🔥<br/>deals for you</p>
+            <h2 className={`font-noto text-5xl text-green-cyan`}>Hot 🔥<br/>deals for you</h2>
             <p className={`text-dark-grey`}>Online shopping for retail sales<br/>direct to consumers</p>
           </div>
           <div className={`flex flex-row justify-between gap-x-6`}>
@@ -150,8 +154,74 @@ export default function Home() {
             </div>
           </div>
         </section2>
-        <section3 className={``}>
-          
+        <section3 className={`flex flex-col px-36 gap-y-16 py-20`}>
+          <div className={`flex flex-row justify-between`}>
+            <div className={`w-1/3 flex flex-col gap-y-5`}>
+              <h2 className={`font-noto text-5xl text-green-cyan `}>Abouts us</h2>
+              <p className={`text-grey-blue`}>At Besnik Consultancy, we take pride in our values – service, integrity, and excellence.</p>
+            </div>
+            <div>
+              <button className={`py-3 px-8 rounded-lg bg-light-grey text-dark-grey`}>Learn more</button>
+            </div>
+          </div>
+          <div className={`flex flex-row`}>
+            <ul className='flex flex-wrap w-1/2 gap-16'>
+              <li className={`flex flex-col w-2/5 gap-y-1`}>
+                <p className={`text-6xl font-bold font-opsans mb-7 text-green-cyan`}>1.</p>
+                <p className={`text-xl font-bold text-green-cyan`}>Who We Are</p>
+                <p className={`text-grey-blue`}>You get a 2-week free trial to kick the Smarty tries. We want you to.</p>
+              </li>
+              <li className={`flex flex-col w-2/5 gap-y-1`}>
+                <p className={`text-6xl font-bold font-opsans mb-7 text-green-cyan`}>2.</p>
+                <p className={`text-xl font-bold text-green-cyan`}>What Do We Do</p>
+                <p className={`text-grey-blue`}>We give you a free course that guides you through the process.</p>
+              </li>
+              <li className={`flex flex-col w-2/5 gap-y-1`}>
+                <p className={`text-6xl font-bold font-opsans mb-7 text-green-cyan`}>3.</p>
+                <p className={`text-xl font-bold text-green-cyan`}>how Do We Help</p>
+                <p className={`text-grey-blue`}>Use our multimedia lecturers, videos, and coaching sessions.</p>
+              </li>
+              <li className={`flex flex-col w-2/5 gap-y-1`}>
+                <p className={`text-6xl font-bold font-opsans mb-7 text-green-cyan`}>4.</p>
+                <p className={`text-xl font-bold text-green-cyan`}>Create success story</p>
+                <p className={`text-dark-grey`}>Use our multimedia lecturers, videos, and coaching sessions.</p>
+              </li>
+            </ul>
+            <div className={`flex flex-row gap-x-3 w-1/2 p-5`}>
+              <div className={`flex flex-col gap-y-3`}>
+                <div className={`pt-10`}>
+                  <Image
+                    src={Illustration1}
+                    width=""
+                    height=""
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={Illustration2}
+                    width=""
+                    height=""
+                  />
+                </div>
+              </div>
+              <div className={`flex flex-col gap-y-3`}>
+                <div>
+                  <Image
+                    src={Illustration3}
+                    width=""
+                    height=""
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={Illustration4}
+                    width=""
+                    height=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </section3>
         <section4 className={``}>
           

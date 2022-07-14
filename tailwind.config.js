@@ -17,6 +17,7 @@ module.exports = {
         'light-grey': "#F4F6F6",
         'dark-grey': "#5F5F64",
         'green-cyan': "#244D4D",
+        'grey-blue': "#64717C"
       },
       height: {
         'h-screen': "50vh"
