@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import ProductsSlider from '../components/ProductsSlider'
 import FurnishopLogo from '../public/furnishop-logo.png'
 import SearchIcon from '../public/search.png'
 import MoreIcon from '../public/more.png'
@@ -110,7 +111,7 @@ export default function Home() {
             </li>
           </ul>
         </section1>
-        <section2 className={`flex flex-row h-h-screen px-28 items-center justify-between`}>
+        <section2 className={`flex flex-row h-h-screen px-24 items-center justify-between`}>
           <div className={`flex flex-col w-3/5 gap-y-5`}>
             <h2 className={`font-noto text-5xl text-green-cyan`}>Hot 🔥<br/>deals for you</h2>
             <p className={`text-dark-grey`}>Online shopping for retail sales<br/>direct to consumers</p>
@@ -154,7 +155,7 @@ export default function Home() {
             </div>
           </div>
         </section2>
-        <section3 className={`flex flex-col px-36 gap-y-16 py-20`}>
+        <section3 className={`flex flex-col px-24 gap-y-16 py-20`}>
           <div className={`flex flex-row justify-between`}>
             <div className={`w-1/3 flex flex-col gap-y-5`}>
               <h2 className={`font-noto text-5xl text-green-cyan `}>Abouts us</h2>
@@ -164,7 +165,7 @@ export default function Home() {
               <button className={`py-3 px-8 rounded-lg bg-light-grey text-dark-grey`}>Learn more</button>
             </div>
           </div>
-          <div className={`flex flex-row`}>
+          <div className={`flex flex-row justify-between`}>
             <ul className='flex flex-wrap w-1/2 gap-16'>
               <li className={`flex flex-col w-2/5 gap-y-1`}>
                 <p className={`text-6xl font-bold font-opsans mb-7 text-green-cyan`}>1.</p>
@@ -187,7 +188,7 @@ export default function Home() {
                 <p className={`text-dark-grey`}>Use our multimedia lecturers, videos, and coaching sessions.</p>
               </li>
             </ul>
-            <div className={`flex flex-row gap-x-3 w-1/2 p-5`}>
+            <div className={`flex flex-row gap-x-3 `}>
               <div className={`flex flex-col gap-y-3`}>
                 <div className={`pt-10`}>
                   <Image
@@ -223,8 +224,14 @@ export default function Home() {
             </div>
           </div>
         </section3>
-        <section4 className={``}>
-          
+        <section4 className={`px-24`}>
+          <div className={`flex flex-row items-end justify-between`}>
+            <h2 className={`font-noto text-5xl text-green-cyan `}>Products</h2>
+            <div className={``}>
+              <p className={`text-lg font-medium text-dark-grey`}>See all --></p>
+            </div>
+          </div>
+          <ProductsSlider/>
         </section4>
         <footer className={styles.footer}>
 
